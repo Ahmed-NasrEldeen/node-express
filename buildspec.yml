@@ -27,11 +27,6 @@ phases:
       - echo "Packaging the application for deployment..."
       - npm run package # Example: Packaging the build artifacts
 
-artifacts:
-  files:
-    - "**/*" # Include all files in the build directory
-  base-directory: "build/" # Specify the directory to start collecting files
-
 cache:
   paths:
     - "node_modules/**/*" # Cache node_modules to speed up future builds
